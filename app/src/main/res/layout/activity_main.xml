@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal" android:gravity="center_vertical"
+        android:background="@drawable/wall0" android:orientation="vertical" android:longClickable="false">
+    tools:context="vitalii.quizactivity.QuizActivity"
+    android:orientation="vertical"
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:textSize="40sp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            android:id="@+id/question_text_view" android:layout_gravity="center_horizontal"
+            android:textColor="#00ffe5" android:gravity="center_horizontal"/>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:layout_gravity="center_horizontal">
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/true_button" android:id="@+id/true_button" android:padding="15dp"
+                android:textSize="12pt"
+                android:drawableRight="@drawable/btrue"
+                android:drawablePadding="7dp" android:background="#00000000" android:textColor="#00ff19"/>
+        <Space android:layout_width="5dp" android:layout_height="5dp"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/false_button" android:id="@+id/false_button" android:padding="15dp"
+                android:textSize="12pt"
+                android:drawableRight="@drawable/bfalse"
+                android:drawablePadding="7dp" android:background="#00000000" android:textColor="#f94347"
+                android:textAlignment="viewStart"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/prev_guestion_button"
+                android:id="@+id/prev_guestion_button"
+                android:src="@drawable/arrowleftt48" android:visibility="visible" android:background="#00000000"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/cheat_button"
+                android:text="@string/cheat_button" android:background="#00000000" android:textColor="#c400ff8c"/>
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/next_guestion_button"
+                     android:contentDescription="@string/next_guestion_button"
+                     android:src="@drawable/arrowright48" android:longClickable="false"
+                     android:adjustViewBounds="false" android:background="#00000000"/>
+    </LinearLayout>
+</LinearLayout>

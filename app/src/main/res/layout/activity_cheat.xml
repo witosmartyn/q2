@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center" android:baselineAligned="false"
+              android:background="@drawable/wall1" android:weightSum="1">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:padding="24dp"
+              android:text="@string/warning_text" android:textSize="20sp" android:textColor="#04ff00"/>
+
+    <TextView android:layout_width="242dp" android:layout_height="81dp"
+              android:padding="24dp"
+              android:id="@+id/answerTextView" android:hint="  " android:textSize="80sp"
+              android:textColor="#00d4ff" android:layout_weight="0.14" android:textStyle="bold|italic"/>
+
+    <Button   android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/showAnswerButton"
+              android:text="@string/show_answer_button"/>
+
+
+</LinearLayout>
